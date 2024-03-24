@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effects</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            margin: 0 10px;
+            transition: all 3s ease;
+        }
+        .image-container1 img:hover {
+            transform: rotate(15deg);
+        }
+        .image-container2 img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container1">
+        <img src="holi.jpg" alt="Image">
+        <img src="holi2.jpg" alt="Image">
+        <img src="radhe.jpg" alt="Image">
+    </div>
+
+    <div class="image-container2">
+        <img src="holi.jpg" alt="Image">
+        <img src="car.jpg" alt="Image">
+        <img src="dahihandi.jpg" alt="Image">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee with Important Message</title>
+    <style>
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .marquee-text {
+            animation: marqueeAnimation 1s linear infinite;
+            color: red;
+        }
+
+        @keyframes marqueeAnimation {
+            0% {
+                transform: translateX(-100%);
+                color: red;
+            }
+            50% {
+                color: orange;
+            }
+            100% {
+                transform: translateX(100%);
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marquee-container">
+        <div class="marquee-text">Important Message: Your message goes here. It can be any important information you want to highlight.</div>
+    </div>
+</body>
+
+</html>
